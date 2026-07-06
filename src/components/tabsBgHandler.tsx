@@ -22,8 +22,10 @@ export const ImageBackgroundHandler = ({
       </ImageBackground>
     );
   } else {
-    <View className="size-full justify-center items-center mt-4 rounded-full">
-      {icon}
-    </View>;
+    return (
+      <View className="size-full justify-center items-center mt-4 rounded-full">
+        {icon}
+      </View>
+    );
   }
 };
