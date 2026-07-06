@@ -16,7 +16,7 @@ const _Layout = () => {
         tabBarStyle: {
           backgroundColor: "#0f0D23",
           borderRadius: 50,
-          marginHorizontal: 20,
+          marginHorizontal: 4,
           marginBottom: 36,
           height: 52,
           position: "absolute",
@@ -34,7 +34,7 @@ const _Layout = () => {
           tabBarIcon: ({ focused }) => (
             <ImageBackgroundHandler
               focused={focused}
-              icon={<Feather name="home" size={20} color="#151312" />}
+              icon={<Feather name="home" size={20} color={focused ? "#151312" : '#fff'} />}
               title="Home"
             />
           ),
@@ -48,7 +48,7 @@ const _Layout = () => {
           tabBarIcon: ({ focused }) => (
             <ImageBackgroundHandler
               focused={focused}
-              icon={<Feather name="search" size={20} color="#151312"  />}
+              icon={<Feather name="search" size={20} color={focused ? "#151312" : '#fff'}  />}
               title="Search"
             />
           ),
@@ -62,7 +62,7 @@ const _Layout = () => {
           tabBarIcon: ({ focused }) => (
             <ImageBackgroundHandler
               focused={focused}
-              icon={<Feather name="user" size={20} color="#151312"  />}
+              icon={<Feather name="user" size={20} color={focused ? "#151312" : '#fff'}  />}
               title="Profile"
             />
           ),
@@ -76,7 +76,7 @@ const _Layout = () => {
           tabBarIcon: ({ focused }) => (
             <ImageBackgroundHandler
               focused={focused}
-              icon={<Feather name="bookmark" size={20} color="#151312"  />}
+              icon={<Feather name="bookmark" size={20} color={focused ? "#151312" : '#fff'}  />}
               title="Saved"
             />
           ),
